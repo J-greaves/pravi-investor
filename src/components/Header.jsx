@@ -2,7 +2,7 @@ import "../index.css";
 
 function Header({ scrollToTop }) {
   return (
-    <nav className="fixed top-0 left-0 w-full shadow-lg max-w-screen-2xl bg-white px-4 py-2 sm:px-8 sm:py-4 flex sm:items-center sm:gap-16 border-b-2 sm:h-16 h-14">
+    <nav className="fixed top-0 left-0 w-full shadow-lg bg-white px-4 py-2 sm:px-8 sm:py-4 flex sm:items-center sm:gap-16 border-b-2 sm:h-16 h-14">
       <div className="flex flex-col sm:flex-row items-start mb-1 w-full sm:w-auto">
         <a href="#" className="">
           <img

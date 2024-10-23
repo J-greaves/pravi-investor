@@ -158,7 +158,7 @@ function App({ scrollToTop }) {
         </div>
         <div className="flex flex-col w-[50%] hidden sm:flex items-center justify-center">
           <img
-            className="w-[35vw] justify-center align-middle"
+            className="w-[35vw] max-w-[350px] justify-center align-middle"
             src="/placeholder-img.png"
           />
         </div>
