@@ -9,10 +9,14 @@ module.exports = {
         "custom-grey": "#454545",
       },
       backgroundImage: {
-        "home-banner": "url('/public/pravi-bg.png')",
+        "home-banner": "url('header-bg.svg')",
+        "team-banner": "url('team-bg.svg')",
       },
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
+        sans: ["Roboto", "sans-serif"],
+      },
+      screens: {
+        "below-1000": { min: "999px" },
       },
     },
     plugins: [],
