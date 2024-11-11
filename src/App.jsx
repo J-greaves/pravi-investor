@@ -421,7 +421,7 @@ function App({ scrollToTop }) {
         </div>
       </div>
       <div className="relative mt-6">
-        <div className="absolute inset-0  below-1000:w-[70%] w-[80%] below-1000:h-[100%] sm:h-[80%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
+        <div className="absolute inset-0  below-1000:w-[60%] w-[80%] below-1000:h-[110%] sm:h-[80%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
         <div className="relative z-10 overflow-hidden">
           <img
             alt="abstract background page decoration"
@@ -494,7 +494,7 @@ function App({ scrollToTop }) {
             <img
               alt="pravi logo small"
               src="lilpravi.svg"
-              className="md:mr-12 mr-2 hover:cursor-pointer"
+              className="md:mr-32 mr-2 hover:cursor-pointer"
               onClick={scrollToTop}
             />
             <button
@@ -528,7 +528,7 @@ function App({ scrollToTop }) {
               Contact us
             </button>
           </div>
-          <div className="flex flex-row gap-4 md:ml-12 ml-0 md:justify-normal items-center justify-center">
+          <div className="flex flex-row gap-4 md:ml-32 ml-0 md:justify-normal items-center justify-center">
             <a href="https://wa.me/447475760534" target="_blank">
               <img
                 alt="whatsapp logo"
