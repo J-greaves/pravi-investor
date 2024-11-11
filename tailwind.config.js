@@ -9,8 +9,8 @@ export default {
         "custom-grey": "#454545",
       },
       backgroundImage: {
-        "home-banner": "url('home-banner.png')",
         "team-banner": "url('team-bg.svg')",
+        topbg: "url('topbg.png')",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
