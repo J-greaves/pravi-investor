@@ -4,7 +4,7 @@ import LoomEmbed from "./components/LoomEmbed";
 function App({ scrollToTop }) {
   return (
     <main className="flex flex-col min-h-[570px] sm:pt-16 pt-14 content-center justify-center sm:px-4">
-      <div className="bg-team-banner sm:bg-cover bg-no-repeat below-1000:p-16 pt-4 flex flex-row">
+      <div className="bg-team-banner below-1000:p-16 pt-4 flex flex-row">
         <div className="flex flex-col sm:p-8 sm:pr-0 sm:py-0 py-0 p-4  justify-center">
           <h1 className="font-medium font-sans sm:text-[48px] text-[36px] sm:pr-4 sm:text-left text-center leading-tight mb-4">
             Technology that helps nonprofits change the world
