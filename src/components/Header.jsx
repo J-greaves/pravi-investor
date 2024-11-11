@@ -13,7 +13,7 @@ function Header({ scrollToTop, scrollToSection }) {
       <div className="flex flex-col sm:flex-row items-start mb-1">
         <a href="#" className="">
           <img
-            className="min-w-[100px] max-w-[150px] h-auto"
+            className="min-w-[10px] max-w-[150px] h-auto"
             src="/pravi-logo.svg"
             alt="pravi company logo"
           ></img>

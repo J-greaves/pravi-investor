@@ -3,7 +3,7 @@ import LoomEmbed from "./components/LoomEmbed";
 
 function App({ scrollToTop }) {
   return (
-    <main className="flex flex-col min-h-[570px] sm:pt-16 pt-14 content-center justify-center sm:px-4">
+    <main className="flex flex-col min-h-[570px] sm:pt-16 pt-12 content-center justify-center sm:px-4">
       <div className="below-1000:p-16 pt-4 flex flex-row">
         <img
           alt="abstract background page decoration"
@@ -11,11 +11,11 @@ function App({ scrollToTop }) {
           className="-mx-4 w[110%] h-auto absolute -z-10 below-1000:-m-16 -m-2 min-h-[300px]"
         />
         <div className="flex flex-col sm:p-8 sm:pr-0 p-4  justify-center">
-          <h1 className="font-medium font-sans sm:text-[48px] text-[36px] sm:pr-4 sm:text-left text-center leading-tight mb-4">
+          <h1 className="font-medium font-sans sm:text-[48px] text-[32px] sm:pr-4 sm:text-left text-center leading-tight mb-2">
             Technology that helps nonprofits change the world
           </h1>
           <div className="flex flex-col">
-            <div className="md:hidden flex justify-center mt-8 sm:mb-4 mb-8">
+            <div className="md:hidden flex justify-center mt-8 sm:mb-4 mb-10">
               <LoomEmbed />
             </div>
             <p className="sm:text-left text-center sm:text-lg text-base font-sans">
@@ -25,7 +25,7 @@ function App({ scrollToTop }) {
                 We’re here to help the other 99%.
               </span>
             </p>
-            <div className="flex flex-row sm: gap-10 p-8 sm:justify-start px-0 justify-center">
+            <div className="flex flex-row sm: gap-10 p-8 sm:justify-start px-0 pb-14 justify-center">
               <button
                 onClick={() =>
                   (window.location.href = "Pravi-deck-Canopy-community.pdf")
@@ -46,7 +46,7 @@ function App({ scrollToTop }) {
         className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16"
       >
         <div className="flex flex-row md:w-[80%] sm:w-[80%] w-[100%] max-w-[650px] bg-gray-100 rounded-xl pb-4">
-          <div className="relative flex flex-row h-full sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px]">
+          <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
             <div className="absolute z-[20]">
               <img
                 alt="abstract art in the shape of a question mark"
@@ -62,19 +62,27 @@ function App({ scrollToTop }) {
               />
             </div>
           </div>
-          <div className="sm:p-4 flex flex-col gap-4 sm:ml-40 ml-8 ">
-            <img
-              alt="problem number one bullet point"
-              src="probcirc.svg"
-              className="self-start"
-            />
-            <h2 className="font-bold font-sans text-lg">Problem</h2>
-            <p className="pr-4 font-sans">
-              In the UK, 168,000 nonprofits are struggling to find donors to
-              give to their cause. <br />
-              They lack the resources, data, and expertise to fix this problem
-              on their own.
-            </p>
+          <div className="sm:p-4 flex flex-col gap-4 sm:ml-40 ml-8 pt-4">
+            <div className="flex flex-row">
+              <img
+                alt="problem number one bullet point"
+                src="probcirc.svg"
+                className="self-start"
+              />
+              <img
+                src="QMark.png"
+                className="sm:hidden block h-auto w-auto max-h-[180px] ml-auto mr-2 -mt-20"
+              />
+            </div>
+            <div className="-mt-6">
+              <h2 className="font-bold font-sans text-lg">Problem</h2>
+              <p className="pr-4 font-sans">
+                In the UK, 168,000 nonprofits are struggling to find donors to
+                give to their cause. <br />
+                They lack the resources, data, and expertise to fix this problem
+                on their own.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -91,12 +99,12 @@ function App({ scrollToTop }) {
             id="solution"
             className="flex flex-row-reverse md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-20"
           >
-            <div className="relative flex flex-row h-full sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px]">
+            <div className="relative flex-row h-full sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
               <div className="absolute z-[20]">
                 <img
                   alt="rubiks cube to represent problem solving"
                   src="rubiks.png"
-                  className="sm:h-[270px] h-[180px] min-w-max mt-6"
+                  className="sm:h-[270px] h-[180px] min-w-max mt-6 sm:flex hidden"
                 />
               </div>
               <div className="absolute -mr-40 -mt-14 z-[10] hidden sm:block">
@@ -107,22 +115,30 @@ function App({ scrollToTop }) {
                 />
               </div>
             </div>
-            <div className="p-4 flex flex-col gap-4 sm:mr-8 mr-4">
-              <img
-                alt="solution bullet point"
-                src="probcirc2.svg"
-                className="self-end"
-              />
-              <h2 className="font-bold font-sans text-lg text-right">
-                Solution
-              </h2>
-              <p className="text-right sm:pl-4 font-sans">
-                Pravi creates precise donor personas, builds conversion funnels,
-                and optimises fundraising campaigns.
-                <br />
-                Nonprofits boost their donor base, grow their income, and
-                maximise their impact.
-              </p>
+            <div className="p-4 flex flex-col gap-4 sm:mr-8 mr-0">
+              <div className="flex flex-row">
+                <img
+                  src="rubiks.png"
+                  className="sm:hidden block max-h-[180px] ml-auto -mt-8 mr-40"
+                />
+                <img
+                  alt="problem number one bullet point"
+                  src="probcirc2.svg"
+                  className="self-start"
+                />
+              </div>
+              <div className="-mt-4">
+                <h2 className="font-bold font-sans text-lg text-right">
+                  Solution
+                </h2>
+                <p className="text-right sm:pl-4 font-sans">
+                  Pravi creates precise donor personas, builds conversion
+                  funnels, and optimises fundraising campaigns.
+                  <br />
+                  Nonprofits boost their donor base, grow their income, and
+                  maximise their impact.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -208,7 +224,7 @@ function App({ scrollToTop }) {
           </div>
         </div>
       </div>
-      <div id="market" className="flex flex-col justify-center ">
+      <div id="market" className="flex flex-col justify-center mb-4">
         <h2 className="text-3xl text-center font-sans font-extrabold mt-4 mb-6">
           Market and Projections
         </h2>
@@ -396,28 +412,28 @@ function App({ scrollToTop }) {
         In partnership with
       </h2>
       <div className="flex flex-wrap gap-4 justify-center mt-6 mb-4">
-        <div className="max-w-[450px] w-full mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+        <div className="max-w-[450px] w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
           <img
             alt="Orbital Global company logo"
             src="/orbital-global-logo.png"
             className="w-full"
           />
         </div>
-        <div className="max-w-[450px] w-full mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+        <div className="max-w-[450px] w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
           <img
             alt="N K M T company logo"
             src="/nkmt-logo.png"
             className="w-full"
           />
         </div>
-        <div className="max-w-[450px] w-full mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+        <div className="max-w-[450px] w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
           <img
             alt="rainforest foundation uk company logo"
             src="/rainforest-logo.png"
             className="w-full"
           />
         </div>
-        <div className="max-w-[450px] w-full mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+        <div className="max-w-[450px] w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
           <img
             alt="innovate UK company logo"
             src="/innovateuk-logo.png"
@@ -426,7 +442,7 @@ function App({ scrollToTop }) {
         </div>
       </div>
       <div className="relative mt-6">
-        <div className="absolute inset-0  below-1000:w-[60%] w-[80%] below-1000:h-[110%] sm:h-[80%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
+        <div className="absolute inset-0  below-1000:w-[60%] w-[80%] below-1000:h-[110%] sm:h-[80%] h-[90%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
         <div className="relative z-10 overflow-hidden">
           <img
             alt="abstract background page decoration"
@@ -437,55 +453,59 @@ function App({ scrollToTop }) {
             Meet the team
           </h2>
           <div className="flex flex-wrap md:gap-8 gap-4 justify-center mt-10">
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 alt="Jeremy Healsmith profile picture"
                 src="/jeremy-profile.jpg"
                 className="p-2 w-full"
               />
-              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-                Jeremy Healsmith
+              <h3 className="font-sans mb-2 font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Jeremy
+                <br /> Healsmith
               </h3>
-              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+              <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Co-Founder
               </h4>
             </div>
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 src="/robyn-profile.jpg"
                 alt="Robyn Greaves profile picture"
                 className="p-2 w-full"
               />
-              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-                Robyn Greaves
+              <h3 className="font-sans mb-2 font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Robyn
+                <br /> Greaves
               </h3>
-              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+              <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Co-Founder
               </h4>
             </div>
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 src="antonio.png"
                 alt="Antonio Redono Plata profile picture"
                 className="p-2 w-full"
               />
-              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-                Antonio Redono Plata
+              <h3 className="font-sans mb-2 font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Antonio
+                <br /> Redono Plata
               </h3>
-              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+              <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Product Lead
               </h4>
             </div>
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 src="sathish.png"
                 alt="Sathish Sankarpandi profile picture"
                 className="p-2 w-full"
               />
-              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-                Sathish Sankarpandi
+              <h3 className="font-sans mb-2 font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Sathish
+                <br /> Sankarpandi
               </h3>
-              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+              <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Data Scientist
               </h4>
             </div>
