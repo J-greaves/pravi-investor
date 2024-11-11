@@ -51,14 +51,14 @@ function App({ scrollToTop }) {
               <img
                 alt="abstract art in the shape of a question mark"
                 src="QMark.png"
-                className="sm:h-[270px] h-[180px] min-w-max mt-6"
+                className="sm:h-[270px] h-[180px] min-w-max"
               />
             </div>
             <div className="absolute -mr-40 -mt-14 z-[10] hidden sm:block">
               <img
                 alt="abstract circle image for page decoration"
                 src="pinkcirc.svg"
-                className="min-h-[200px] min-w-[150px] mt-24 self-end place-self-end justify-self-end"
+                className="min-h-[200px] min-w-[150px] mt-16 self-end place-self-end justify-self-end"
               />
             </div>
           </div>
@@ -97,21 +97,21 @@ function App({ scrollToTop }) {
 
           <div
             id="solution"
-            className="flex flex-row-reverse md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-20"
+            className="flex flex-row-reverse h-auto md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-20"
           >
-            <div className="relative flex-row h-full sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
+            <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
               <div className="absolute z-[20]">
                 <img
                   alt="rubiks cube to represent problem solving"
                   src="rubiks.png"
-                  className="sm:h-[270px] h-[180px] min-w-max mt-6 sm:flex hidden"
+                  className="sm:h-[270px] h-[180px] min-w-max mt-4 sm:flex hidden"
                 />
               </div>
               <div className="absolute -mr-40 -mt-14 z-[10] hidden sm:block">
                 <img
                   alt="abstract pink circle for page design"
                   src="pinkcirc.svg"
-                  className="min-h-[200px] min-w-[150px] mt-24 self-end place-self-end justify-self-end"
+                  className="min-h-[200px] min-w-[150px] mt-20 self-end place-self-end justify-self-end"
                 />
               </div>
             </div>
@@ -119,15 +119,15 @@ function App({ scrollToTop }) {
               <div className="flex flex-row">
                 <img
                   src="rubiks.png"
-                  className="sm:hidden block max-h-[180px] ml-auto -mt-8 mr-40"
+                  className="sm:hidden block max-h-[180px] mr-auto -mt-16"
                 />
                 <img
                   alt="problem number one bullet point"
                   src="probcirc2.svg"
-                  className="self-start"
+                  className="self-start mt-auto mb-8"
                 />
               </div>
-              <div className="-mt-4">
+              <div className="-mt-6">
                 <h2 className="font-bold font-sans text-lg text-right">
                   Solution
                 </h2>
