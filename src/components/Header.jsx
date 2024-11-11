@@ -13,8 +13,9 @@ function Header({ scrollToTop, scrollToSection }) {
       <div className="flex flex-col sm:flex-row items-start mb-1">
         <a href="#" className="">
           <img
-            className="h-10  min-w-[123px] min-h-[40px] "
-            src="/pravi-logo.png"
+            className="min-w-[100px] max-w-[150px] h-auto"
+            src="/pravi-logo.svg"
+            alt="pravi company logo"
           ></img>
         </a>
       </div>
@@ -46,14 +47,19 @@ function Header({ scrollToTop, scrollToSection }) {
           <button onClick={() => scrollToSection("ask")}>The ask</button>
         </ul>
       </div>
-      <div className="flex flex-row gap-4 md:gap-10 ml-auto justify-center sm:justify-normal sm:mr-0  md:mr-20 h-auto">
+      <div className="flex flex-row gap-2 md:gap-10 ml-auto justify-center sm:justify-normal  md:mr-2 h-auto">
         <div
           className="font-sans font-normal bg-white border-black border rounded text-black text-center leading-tight justify-center sm:px-3 py-1 sm:py-1.5 hover:text-white hover:bg-black transition-all duration-300 ease-in-out hover:cursor-pointer w-[60px] sm:min-w-[120px] text-xs sm:text-base"
           onClick={scrollToTop}
         >
           Watch demo
         </div>
-        <div className="font-sans font-normal bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight sm:px-3 py-1 sm:py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer w-[70px] sm:min-w-[180px] text-xs sm:text-base">
+        <div
+          onClick={() =>
+            (window.location.href = "Pravi-deck-Canopy-community.pdf")
+          }
+          className="font-sans font-normal bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight sm:px-3 py-1 sm:py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer w-[70px] sm:min-w-[180px] text-xs sm:text-base"
+        >
           Download pitch deck
         </div>
       </div>
