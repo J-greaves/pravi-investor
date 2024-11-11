@@ -4,13 +4,18 @@ import LoomEmbed from "./components/LoomEmbed";
 function App({ scrollToTop }) {
   return (
     <main className="flex flex-col min-h-[570px] sm:pt-16 pt-14 content-center justify-center sm:px-4">
-      <div className="bg-team-banner below-1000:p-16 pt-4 flex flex-row">
-        <div className="flex flex-col sm:p-8 sm:pr-0 sm:py-0 py-0 p-4  justify-center">
+      <div className="below-1000:p-16 pt-4 flex flex-row">
+        <img
+          alt="abstract background page decoration"
+          src="topbg.png"
+          className="-mx-4 w[110%] h-auto absolute -z-10 below-1000:-m-16 -m-2 min-h-[300px]"
+        />
+        <div className="flex flex-col sm:p-8 sm:pr-0 p-4  justify-center">
           <h1 className="font-medium font-sans sm:text-[48px] text-[36px] sm:pr-4 sm:text-left text-center leading-tight mb-4">
             Technology that helps nonprofits change the world
           </h1>
           <div className="flex flex-col">
-            <div className="md:hidden flex justify-center mt-8 mb-6">
+            <div className="md:hidden flex justify-center mt-8 sm:mb-4 mb-8">
               <LoomEmbed />
             </div>
             <p className="sm:text-left text-center sm:text-lg text-base font-sans">
@@ -40,7 +45,7 @@ function App({ scrollToTop }) {
         id="problem"
         className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16"
       >
-        <div className="flex flex-row md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4">
+        <div className="flex flex-row md:w-[80%] sm:w-[80%] w-[100%] max-w-[650px] bg-gray-100 rounded-xl pb-4">
           <div className="relative flex flex-row h-full sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px]">
             <div className="absolute z-[20]">
               <img

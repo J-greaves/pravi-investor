@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -7,10 +7,6 @@ export default {
         "custom-pink": "#DB0F79",
         "custom-pink-border": "#ff8ac2",
         "custom-grey": "#454545",
-      },
-      backgroundImage: {
-        "team-banner": "url('team-bg.svg')",
-        topbg: "url('topbg.png')",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],

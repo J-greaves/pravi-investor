@@ -12,7 +12,7 @@ const LoomEmbed = () => {
         webkitallowfullscreen
         mozallowfullscreen
         allowFullScreen
-        className="absolute top-0 left-0 w-full h-full max-h-[81%] rounded-2xl max-w-[850px] min-h-[250px] shadow shadow-black"
+        className="absolute top-0 left-0 w-full h-full  rounded-2xl max-w-[850px] md:min-h-[250px] min-h-[175px] shadow shadow-black"
         title="Loom Video"
       ></iframe>
     </div>
