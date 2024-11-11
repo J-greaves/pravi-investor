@@ -9,9 +9,16 @@ function Main() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <Header scrollToTop={scrollToTop} />
+      <Header scrollToTop={scrollToTop} scrollToSection={scrollToSection} />
       <App scrollToTop={scrollToTop} />
     </>
   );

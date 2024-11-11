@@ -4,9 +4,9 @@ import LoomEmbed from "./components/LoomEmbed";
 function App({ scrollToTop }) {
   return (
     <main className="flex flex-col min-h-[570px] sm:pt-16 pt-14 content-center justify-center sm:px-4">
-      <div className="bg-home-banner sm:bg-cover sm:bg-center bg-no-repeat bg-top below-1000:p-16 sm:pt-0 pt-4 flex flex-row">
-        <div className="flex flex-col sm:p-8 sm:pr-0 sm:py-0 py-0 p-4 pt-8 justify-center">
-          <h1 className="font-extrabold font-sans text-[48px] md:max-w-[90%] sm:max-w-[80%] sm:text-left text-center">
+      <div className="bg-home-banner sm:bg-cover sm:bg-center bg-no-repeat bg-top below-1000:p-16 pt-4 flex flex-row">
+        <div className="flex flex-col sm:p-8 sm:pr-0 sm:py-0 py-0 p-4  justify-center">
+          <h1 className="font-extrabold font-sans sm:text-[48px] text-[36px] md:max-w-[90%] sm:max-w-[80%] sm:text-left text-center">
             Technology that helps nonprofits change the world
           </h1>
           <div className="flex flex-col">
@@ -32,13 +32,10 @@ function App({ scrollToTop }) {
         </div>
       </div>
       <div
-        id="prob and solu"
+        id="problem"
         className="flex flex-col w-full px-8 md:px-20 md:pt-16 pt-8 gap-16"
       >
-        <div
-          id="problem"
-          className="flex flex-row md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4"
-        >
+        <div className="flex flex-row md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4">
           <div className="relative flex flex-row max-w-[50%] w-auto h-[100%] sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px]">
             <img src="QMark.png" className=" z-[20]" />
             <img
@@ -85,7 +82,7 @@ function App({ scrollToTop }) {
           </div>
         </div>
       </div>
-      <div className="relative">
+      <div id="traction" className="relative">
         <h2 className="text-3xl text-center font-sans font-extrabold mb-8 mt-16">
           Traction
         </h2>
@@ -99,8 +96,11 @@ function App({ scrollToTop }) {
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img className="w-[50px] sm:w-[75px]" src="/group-icon.svg" />
           <div className="flex flex-row h-full">
-            <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
+            <img
+              src="check.svg"
+              className="below-1000:block hidden self-center max-h-[24px] w-auto"
+            />
+            <p className="below-1000:pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               300+ Waitlist
             </p>
           </div>
@@ -108,8 +108,11 @@ function App({ scrollToTop }) {
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img className="w-[50px] sm:w-[75px]" src="/bulb-icon.svg" />
           <div className="flex flex-row h-full">
-            <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
+            <img
+              src="check.svg"
+              className="below-1000:block hidden self-center max-h-[24px] w-auto"
+            />
+            <p className="below-1000:pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               3 Early Adopters
             </p>
           </div>
@@ -117,8 +120,11 @@ function App({ scrollToTop }) {
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img className="w-[50px] sm:w-[75px]" src="/cart-icon.svg" />
           <div className="flex flex-row h-full">
-            <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
+            <img
+              src="check.svg"
+              className="below-1000:block hidden self-center max-h-[24px] w-auto"
+            />
+            <p className="below-1000:pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               15 Pre-sales
             </p>
           </div>
@@ -126,16 +132,17 @@ function App({ scrollToTop }) {
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img className="w-[50px] sm:w-[75px]" src="/check-icon.svg" />
           <div className="flex flex-row h-full">
-            <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-4 sm:text-2xl font-sans text-custom-grey text-left text-sm sm:font-bold font-normal self-center">
-              Achieved with
-              <br />
-              £0 marketing spend
+            <img
+              src="check.svg"
+              className="below-1000:block hidden self-center max-h-[24px] w-auto"
+            />
+            <p className=" below-1000:pl-4 sm:text-2xl font-sans text-custom-grey below-1000:text-left text-center text-sm sm:font-bold font-normal self-center">
+              Achieved with £0 marketing spend
             </p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center ">
+      <div id="market" className="flex flex-col justify-center ">
         <h2 className="text-3xl text-center font-sans font-extrabold mt-4 mb-6">
           Market and Projections
         </h2>
@@ -174,7 +181,10 @@ function App({ scrollToTop }) {
           </div>
         </div>
       </div>
-      <div className="sm:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center">
+      <div
+        id="business"
+        className="sm:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center"
+      >
         <div className="flex flex-col sm:w-[50%] w-[100%]">
           <h2 className="text-3xl text-left font-sans font-extrabold my-0">
             Business model
@@ -220,7 +230,7 @@ function App({ scrollToTop }) {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div id="ask" className="flex flex-col justify-center items-center">
         <h2 className="text-3xl text-center font-sans font-extrabold mt-8 mb-4">
           The Ask
         </h2>
@@ -235,7 +245,7 @@ function App({ scrollToTop }) {
             <div className="flex flex-row">
               <img
                 src="check.svg"
-                className="self-center max-h-[24px] w-auto"
+                className="sm:block hidden self-center max-h-[24px] w-auto"
               />
               <div className="flex flex-col ml-2">
                 <h3 className="text-xl font-sans font-bold">£400,000</h3>
@@ -299,64 +309,111 @@ function App({ scrollToTop }) {
           <img src="/innovateuk-logo.png" alt="Logo 4" className="w-full" />
         </div>
       </div>
-      <div className=" inset-0 bg-team-banner bg-cover">
-        <h2 className="text-3xl text-center font-sans font-extrabold mt-8">
-          Meet the team
-        </h2>
-        <div className="flex flex-wrap md:gap-8 gap-4 justify-center mt-10">
-          <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
-            <img
-              src="/jeremy-profile.jpg"
-              alt="Logo 1"
-              className="p-2 w-full"
-            />
-            <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-              Jeremy Healsmith
-            </h3>
-            <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
-              Co-Founder
-            </h4>
-          </div>
-          <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
-            <img src="/robyn-profile.jpg" alt="Logo 2" className="p-2 w-full" />
-            <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-              Robyn Greaves
-            </h3>
-            <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
-              Co-Founder
-            </h4>
-          </div>
-          <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
-            <img src="antonio.png" alt="Logo 4" className="p-2 w-full" />
-            <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-              Antonio Redono Plata
-            </h3>
-            <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
-              Product Lead
-            </h4>
-          </div>
-          <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
-            <img src="sathish.png" alt="Logo 3" className="p-2 w-full" />
-            <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
-              Sathish Sankarpandi
-            </h3>
-            <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
-              Data Scientist
-            </h4>
+      <div className="relative">
+        <div className="absolute inset-0  below-1000:w-[70%] w-[80%] below-1000:h-[100%] sm:h-[80%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
+        <div className="relative z-10 overflow-hidden">
+          <img
+            src="team-bg.svg"
+            className="-mx-4 w-screen min-h-full absolute -z-10"
+          />
+          <h2 className="text-3xl text-center font-sans font-extrabold mt-8">
+            Meet the team
+          </h2>
+          <div className="flex flex-wrap md:gap-8 gap-4 justify-center mt-10">
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+              <img
+                src="/jeremy-profile.jpg"
+                alt="Logo 1"
+                className="p-2 w-full"
+              />
+              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Jeremy Healsmith
+              </h3>
+              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+                Co-Founder
+              </h4>
+            </div>
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+              <img
+                src="/robyn-profile.jpg"
+                alt="Logo 2"
+                className="p-2 w-full"
+              />
+              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Robyn Greaves
+              </h3>
+              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+                Co-Founder
+              </h4>
+            </div>
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+              <img src="antonio.png" alt="Logo 4" className="p-2 w-full" />
+              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Antonio Redono Plata
+              </h3>
+              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+                Product Lead
+              </h4>
+            </div>
+            <div className="flex-grow-0 flex-shrink-0 bg-white w-[150px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+              <img src="sathish.png" alt="Logo 3" className="p-2 w-full" />
+              <h3 className="font-sans font-bold text-[12px] mt-4 sm:text-lg text-center">
+                Sathish Sankarpandi
+              </h3>
+              <h4 className="font-sans text-[10px] mb-4 sm:text-lg text-center">
+                Data Scientist
+              </h4>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center my-4">
-        <div className="inline-block bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight mt-4 sm:mt-8 px-3 py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer">
-          Download pitch deck
+
+      <footer className="h-[144px] border-t bg-white w-full md:mt-32 mt-8 flex flex-col items-center">
+        <div className="flex md:flex-row flex-col gap-8 sm:w-[75vw] w-[85vw] pt-4 justify-center">
+          <div className=" sm:gap-8 gap-4 mx-2 flex flex-row text-sm justify-center">
+            <img src="lilpravi.svg" className="md:mr-12 mr-2" />
+            <button
+              onClick={() =>
+                (window.location.href = "https://pravi.ai/privacy-policy")
+              }
+            >
+              Priavacy policy
+            </button>
+            <button
+              onClick={() =>
+                (window.location.href = "https://pravi.ai/terms-of-service")
+              }
+            >
+              Terms and conditions
+            </button>
+            <button
+              onClick={() => (window.location.href = "https://pravi.ai/faq")}
+            >
+              FAQ
+            </button>
+            <button
+              onClick={() =>
+                (window.location.href = "https://pravi.ai/contact-us")
+              }
+            >
+              Contact us
+            </button>
+          </div>
+          <div className="flex flex-row gap-4 md:ml-12 ml-0 md:justify-normal justify-center">
+            <a href="https://wa.me/447475760534" target="_blank">
+              <img src="whatsapp.svg" className="max-w-[25px]" />
+            </a>
+            <a href="https://uk.linkedin.com/company/pravi-ai">
+              <img src="linkedin.svg" className="max-w-[25px]" />
+            </a>
+            <a href="https://www.instagram.com/pravi.ai/">
+              <img src="instagram.svg" className="max-w-[25px]" />
+            </a>
+          </div>
         </div>
-      </div>
-      <footer className="h-[32px] bg-custom-grey mt-16 flex flex-row items-center">
-        <h4 className="text-white text-left sm:text-base text-xs sm:ml-8 ml-2">
+        <h4 className="h-[50%] text-black text-left sm:text-base text-xs sm:ml-8 ml-2 pt-6 pb-8 ">
           Pravi @ 2024. All rights reserved.
         </h4>
-        <div className="flex-1"></div>
-        <img src="/linkedin.png" className="h-[20px] sm:mr-8 mr-2"></img>
       </footer>
     </main>
   );
