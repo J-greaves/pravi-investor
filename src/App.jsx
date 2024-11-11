@@ -4,19 +4,19 @@ import LoomEmbed from "./components/LoomEmbed";
 function App({ scrollToTop }) {
   return (
     <main className="flex flex-col min-h-[570px] sm:pt-16 pt-14 content-center justify-center sm:px-4">
-      <div className="bg-home-banner sm:bg-cover sm:bg-center bg-no-repeat bg-top below-1000:p-24 sm:pt-0 pt-4 flex flex-row">
-        <div className="flex flex-col gap-4 sm:p-16 sm:pr-0 sm:py-0 py-0 p-4 pt-0 justify-center">
-          <h1 className="font-black font-sans text-[48px] md:max-w-[90%] sm:max-w-[80%] sm:text-left text-center">
+      <div className="bg-home-banner sm:bg-cover sm:bg-center bg-no-repeat bg-top below-1000:p-16 sm:pt-0 pt-4 flex flex-row">
+        <div className="flex flex-col sm:p-8 sm:pr-0 sm:py-0 py-0 p-4 pt-8 justify-center">
+          <h1 className="font-extrabold font-sans text-[48px] md:max-w-[90%] sm:max-w-[80%] sm:text-left text-center">
             Technology that helps nonprofits change the world
           </h1>
           <div className="flex flex-col">
-            <div className="md:hidden flex justify-center">
+            <div className="md:hidden flex justify-center mt-8 mb-6">
               <LoomEmbed />
             </div>
-            <p className="sm:text-left text-center sm:text-lg text-sm">
+            <p className="sm:text-left text-center sm:text-lg text-base">
               65% of all donations go to the top 0.85% of nonprofits.
               <br />
-              <span className="font-normal sm:text-left text-center block">
+              <span className="font-normal sm:text-left test-base text-center block">
                 We’re here to help the other 99%.
               </span>
             </p>
@@ -68,7 +68,7 @@ function App({ scrollToTop }) {
               <img src="rubiks.png" className=" z-[20]" />
               <img
                 src="pinkcirc.svg"
-                className="-ml-40 z-[10] below-1000:block hidden self-end"
+                className="-ml-48 z-[10] below-1000:block hidden self-end"
               />
             </div>
             <div className="p-4 flex flex-col gap-4 sm:mr-8 mr-4">
@@ -100,7 +100,7 @@ function App({ scrollToTop }) {
           <img className="w-[50px] sm:w-[75px]" src="/group-icon.svg" />
           <div className="flex flex-row h-full">
             <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-base font-bold self-center">
+            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               300+ Waitlist
             </p>
           </div>
@@ -109,7 +109,7 @@ function App({ scrollToTop }) {
           <img className="w-[50px] sm:w-[75px]" src="/bulb-icon.svg" />
           <div className="flex flex-row h-full">
             <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-base font-bold self-center">
+            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               3 Early Adopters
             </p>
           </div>
@@ -118,7 +118,7 @@ function App({ scrollToTop }) {
           <img className="w-[50px] sm:w-[75px]" src="/cart-icon.svg" />
           <div className="flex flex-row h-full">
             <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-base font-bold self-center">
+            <p className=" pl-2 sm:text-2xl font-sans text-custom-grey text-center text-sm sm:font-bold font-normal self-center">
               15 Pre-sales
             </p>
           </div>
@@ -127,7 +127,7 @@ function App({ scrollToTop }) {
           <img className="w-[50px] sm:w-[75px]" src="/check-icon.svg" />
           <div className="flex flex-row h-full">
             <img src="check.svg" className="self-center max-h-[24px] w-auto" />
-            <p className=" pl-4 sm:text-2xl font-sans text-custom-grey text-left text-base font-bold self-center">
+            <p className=" pl-4 sm:text-2xl font-sans text-custom-grey text-left text-sm sm:font-bold font-normal self-center">
               Achieved with
               <br />
               £0 marketing spend
@@ -139,9 +139,12 @@ function App({ scrollToTop }) {
         <h2 className="text-3xl text-center font-sans font-extrabold mt-4 mb-6">
           Market and Projections
         </h2>
-        <div className="flex flex-wrap  mt-4 below-1000:mx-32 mx-8 ">
-          <img src="shape2.svg" className="self-end -mr-14 -mb-8 z-[50]" />
-          <div className="flex-1 min-w-[200px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl mr-4">
+        <div className="flex flex-wrap  mt-4 below-1000:mx-32 mx-8 md:gap-0 gap-6 justify-center mb-8">
+          <img
+            src="shape2.svg"
+            className="self-end -mr-14 -mb-8 z-[50] md:block hidden"
+          />
+          <div className="flex-1 max-w-[70%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:mr-4">
             <img className="" src="/globe-icon.svg" />
             <p className="p-4 sm:text-lg text-center text-sm">
               <span className="font-bold">TAM:</span> 4.5m nonprofits across the
@@ -151,7 +154,7 @@ function App({ scrollToTop }) {
               revenues between £100k-£3.5m
             </p>
           </div>
-          <div className="flex-1 min-w-[calc(50%-16px)] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl ml-4">
+          <div className="flex-1 max-w-[70%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:ml-4">
             <img className="" src="/graph-icon.svg" />
             <p className="p-4 sm:text-lg text-center text-sm">
               <span className="font-bold">12-Month Revenue Forecast:</span> £7.2
@@ -228,7 +231,7 @@ function App({ scrollToTop }) {
           <div className="sm:w-[30%] w-[40%]">
             <img src="info.svg" className="p-4" />
           </div>
-          <div className="flex-1 h-[100%] bg-[#fff2f9] sm:w-[35%] w-[80%] rounded-xl min-h-[200px] flex items-start flex-col sm:px-8 px-4 sm:py-6 py-3 gap-8 ">
+          <div className="mb-4 flex-1 h-[100%] bg-[#fff2f9] sm:w-[35%] w-[80%] rounded-xl min-h-[200px] flex items-start flex-col sm:px-8 px-4 sm:py-6 py-3 gap-8 ">
             <div className="flex flex-row">
               <img
                 src="check.svg"
