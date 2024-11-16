@@ -54,19 +54,19 @@ function App({ scrollToTop }) {
                 />
               </div>
             </div>
-            <div className="sm:p-4 flex flex-col gap-4 sm:ml-48 ml-8 pt-4">
+            <div className="sm:p-4 flex flex-col sm:ml-48 ml-8 pt-4">
               <div className="flex flex-row">
                 <img
                   alt="problem number one bullet point"
                   src="probcirc.svg"
-                  className="self-start"
+                  className="self-start mt-auto mb-8 place-self-end justify-start justify-self-start mr-auto"
                 />
                 <img
                   src="QMark.png"
-                  className="sm:hidden block h-auto w-auto max-h-[180px] ml-auto mr-2 -mt-20"
+                  className="sm:hidden block max-w-[40vw] sm:max-h-[180px] ml-auto mr-2 -mt-20"
                 />
               </div>
-              <div className="-mt-10 sm:-mt-0">
+              <div className="-mt-2 sm:-mt-0">
                 <h2 className="font-bold font-sans text-lg">Problem</h2>
                 <p className="pr-4 font-sans sm:mt-4 mt-2">
                   In the UK, 168,000 nonprofits are struggling to find donors to
@@ -104,7 +104,7 @@ function App({ scrollToTop }) {
                 <div className="flex flex-row w-full">
                   <img
                     src="rubiks.png"
-                    className="sm:hidden block max-h-[180px] mr-auto -mt-16"
+                    className="sm:hidden block max-w-[40vw] sm:max-h-[180px] mr-auto -mt-16"
                   />
                   <img
                     alt="problem number one bullet point"
@@ -116,7 +116,7 @@ function App({ scrollToTop }) {
                   <h2 className="font-bold font-sans text-lg text-right">
                     Solution
                   </h2>
-                  <p className="text-right sm:pl-4 font-sans sm:mt-6 mt-2">
+                  <p className="text-right sm:pl-4 font-sans sm:mt-4 mt-2">
                     Pravi creates precise donor personas, builds conversion
                     funnels, and optimises fundraising campaigns.
                     <br />
