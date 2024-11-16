@@ -41,9 +41,9 @@ function App({ scrollToTop }) {
       </div>
       <div
         id="problem"
-        className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16"
+        className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16 "
       >
-        <div className="flex flex-row md:w-[80%] sm:w-[80%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8">
+        <div className="flex flex-row below-1200:w-[60%] sm:w-[90%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8 ">
           <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
             <div className="absolute z-[20]">
               <img
@@ -82,13 +82,13 @@ function App({ scrollToTop }) {
             <img
               alt="arrow connecting problem and solution boxes"
               src="arrow.svg"
-              className="-mt-16 below-1000:block hidden"
+              className="-mt-16 below-1000:block hidden below-2200:hidden"
             />
           </div>
 
           <div
             id="solution"
-            className="flex flex-row-reverse h-auto md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-40"
+            className="flex flex-row-reverse h-auto below-1200:w-[50%] min-h-[250px] sm:w-[80%] w-[100%] max-w-[635px] bg-gray-100 rounded-xl pb-4 sm:mr-40"
           >
             <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
               <div className="absolute z-[20]">
@@ -262,7 +262,7 @@ function App({ scrollToTop }) {
           <h2 className="text-3xl text-center font-sans font-extrabold my-0">
             Business model
           </h2>
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row justify-center items-center sm:mt-4">
             <div className="flex flex-col w-[60%] items-center mb-8">
               <img
                 alt="calendar icon"
@@ -285,7 +285,7 @@ function App({ scrollToTop }) {
               </p>
             </div> */}
           </div>
-          <div className="flex flex-row gap-10 mt-auto justify-center">
+          <div className="flex flex-row gap-10 mt-auto justify-center items-center">
             <button
               onClick={scrollToTop}
               className="bg-white font-sans border-custom-pink-border border rounded hover:text-white text-center leading-tight px-3 py-1.5 hover:bg-black transition-all duration-300 ease-in-out hover:cursor-pointer"
@@ -300,7 +300,7 @@ function App({ scrollToTop }) {
             </button>
           </div>
         </div>
-        <div className="flex-col w-[40%] hidden sm:flex items-center justify-center">
+        <div className="flex-col sm:w-[50%] hidden sm:flex items-center justify-center">
           <img
             alt="graphic of a notice board in an office covered in notes"
             className="w-[35vw] max-w-[400px] justify-center align-middle"

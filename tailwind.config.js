@@ -14,6 +14,7 @@ module.exports = {
       screens: {
         "below-1000": { min: "999px" },
         "below-1200": { min: "1199px" },
+        "below-2200": { min: "2200px" },
       },
     },
     plugins: [],
