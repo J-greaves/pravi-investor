@@ -39,89 +39,91 @@ function App({ scrollToTop }) {
           <LoomEmbed />
         </div>
       </div>
-      <div
-        id="problem"
-        className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16 "
-      >
-        <div className="flex flex-row below-1200:w-[60%] sm:w-[90%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8 ">
-          <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
-            <div className="absolute z-[20]">
-              <img
-                alt="abstract art in the shape of a question mark"
-                src="QMark.png"
-                className="sm:h-[270px] h-[180px] min-w-max"
-              />
-            </div>
-          </div>
-          <div className="sm:p-4 flex flex-col gap-4 sm:ml-48 ml-8 pt-4">
-            <div className="flex flex-row">
-              <img
-                alt="problem number one bullet point"
-                src="probcirc.svg"
-                className="self-start"
-              />
-              <img
-                src="QMark.png"
-                className="sm:hidden block h-auto w-auto max-h-[180px] ml-auto mr-2 -mt-20"
-              />
-            </div>
-            <div className="-mt-10 sm:-mt-0">
-              <h2 className="font-bold font-sans text-lg">Problem</h2>
-              <p className="pr-4 font-sans sm:mt-4 mt-2">
-                In the UK, 168,000 nonprofits are struggling to find donors to
-                give to their cause. <br />
-                They lack the resources, data, and expertise to fix this problem
-                on their own.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-row">
-          <div className="ml-auto">
-            <img
-              alt="arrow connecting problem and solution boxes"
-              src="arrow.svg"
-              className="-mt-16 below-1000:block hidden below-2200:hidden"
-            />
-          </div>
-
-          <div
-            id="solution"
-            className="flex flex-row-reverse h-auto below-1200:w-[50%] min-h-[250px] sm:w-[80%] w-[100%] max-w-[635px] bg-gray-100 rounded-xl pb-4 sm:mr-40"
-          >
-            <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
+      <div className="below-1200:mx-20">
+        <div
+          id="problem"
+          className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16 "
+        >
+          <div className="flex flex-row below-1200:w-[60%] sm:w-[90%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8 ">
+            <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
               <div className="absolute z-[20]">
                 <img
-                  alt="rubiks cube to represent problem solving"
-                  src="rubiks.png"
-                  className="sm:h-[270px] h-[180px] min-w-max mt-4 sm:flex hidden"
+                  alt="abstract art in the shape of a question mark"
+                  src="QMark.png"
+                  className="sm:h-[270px] h-[180px] min-w-max"
                 />
               </div>
             </div>
-            <div className="p-4 flex flex-col gap-4 sm:mr-12 mr-0">
-              <div className="flex flex-row w-full">
-                <img
-                  src="rubiks.png"
-                  className="sm:hidden block max-h-[180px] mr-auto -mt-16"
-                />
+            <div className="sm:p-4 flex flex-col gap-4 sm:ml-48 ml-8 pt-4">
+              <div className="flex flex-row">
                 <img
                   alt="problem number one bullet point"
-                  src="probcirc2.svg"
-                  className="self-start mt-auto mb-8 place-self-end justify-end justify-self-end ml-auto"
+                  src="probcirc.svg"
+                  className="self-start"
+                />
+                <img
+                  src="QMark.png"
+                  className="sm:hidden block h-auto w-auto max-h-[180px] ml-auto mr-2 -mt-20"
                 />
               </div>
-              <div className="-mt-6">
-                <h2 className="font-bold font-sans text-lg text-right">
-                  Solution
-                </h2>
-                <p className="text-right sm:pl-4 font-sans sm:mt-6 mt-2">
-                  Pravi creates precise donor personas, builds conversion
-                  funnels, and optimises fundraising campaigns.
-                  <br />
-                  Nonprofits boost their donor base, grow their income, and
-                  maximise their impact.
+              <div className="-mt-10 sm:-mt-0">
+                <h2 className="font-bold font-sans text-lg">Problem</h2>
+                <p className="pr-4 font-sans sm:mt-4 mt-2">
+                  In the UK, 168,000 nonprofits are struggling to find donors to
+                  give to their cause. <br />
+                  They lack the resources, data, and expertise to fix this
+                  problem on their own.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-row">
+            <div className="ml-auto">
+              <img
+                alt="arrow connecting problem and solution boxes"
+                src="arrow.svg"
+                className="-mt-16 below-1000:block hidden below-2200:hidden"
+              />
+            </div>
+
+            <div
+              id="solution"
+              className="flex flex-row-reverse h-auto below-1200:w-[50%] min-h-[250px] sm:w-[80%] w-[100%] max-w-[635px] bg-gray-100 rounded-xl pb-4 sm:mr-40"
+            >
+              <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
+                <div className="absolute z-[20]">
+                  <img
+                    alt="rubiks cube to represent problem solving"
+                    src="rubiks.png"
+                    className="sm:h-[270px] h-[180px] min-w-max mt-4 sm:flex hidden"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex flex-col gap-4 sm:mr-12 mr-0">
+                <div className="flex flex-row w-full">
+                  <img
+                    src="rubiks.png"
+                    className="sm:hidden block max-h-[180px] mr-auto -mt-16"
+                  />
+                  <img
+                    alt="problem number one bullet point"
+                    src="probcirc2.svg"
+                    className="self-start mt-auto mb-8 place-self-end justify-end justify-self-end ml-auto"
+                  />
+                </div>
+                <div className="-mt-6">
+                  <h2 className="font-bold font-sans text-lg text-right">
+                    Solution
+                  </h2>
+                  <p className="text-right sm:pl-4 font-sans sm:mt-6 mt-2">
+                    Pravi creates precise donor personas, builds conversion
+                    funnels, and optimises fundraising campaigns.
+                    <br />
+                    Nonprofits boost their donor base, grow their income, and
+                    maximise their impact.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
