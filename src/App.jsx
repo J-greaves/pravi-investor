@@ -63,7 +63,7 @@ function App({ scrollToTop }) {
                 />
                 <img
                   src="QMark.png"
-                  className="sm:hidden block max-w-[40vw] sm:max-h-[180px] ml-auto mr-2 -mt-20"
+                  className="sm:hidden block max-w-[45vw] sm:max-h-[180px] ml-auto mr-2 -mt-20"
                 />
               </div>
               <div className="-mt-2 sm:-mt-0">
@@ -104,7 +104,7 @@ function App({ scrollToTop }) {
                 <div className="flex flex-row w-full">
                   <img
                     src="rubiks.png"
-                    className="sm:hidden block max-w-[40vw] sm:max-h-[180px] mr-auto -mt-16"
+                    className="sm:hidden block max-w-[45vw] sm:max-h-[180px] mr-auto -mt-16"
                   />
                   <img
                     alt="problem number one bullet point"
@@ -258,7 +258,7 @@ function App({ scrollToTop }) {
       </div>
       <div
         id="business"
-        className="sm:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center "
+        className="below-1200:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center sm:mx-4 below-1200:mx-16 gap-10"
       >
         <div className="flex flex-col sm:w-[50%] w-[100%] ml-auto">
           <h2 className="text-3xl text-center font-sans font-extrabold my-0">
