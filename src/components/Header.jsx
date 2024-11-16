@@ -11,7 +11,7 @@ function Header({ scrollToTop, scrollToSection }) {
   return (
     <nav className="z-[100] fixed top-0 left-0 w-full shadow-lg bg-white px-2 py-2 sm:px-4 sm:py-4 flex sm:items-center md:gap-8 gap-2 border-b-2 sm:h-16 h-14 justify-start">
       <div className="flex flex-col sm:flex-row items-start mb-1">
-        <a href="#" className="">
+        <a href="/">
           <img
             className="min-w-[10px] max-w-[150px] h-auto"
             src="/pravi-logo.svg"
@@ -47,17 +47,9 @@ function Header({ scrollToTop, scrollToSection }) {
           <button onClick={() => scrollToSection("ask")}>The ask</button>
         </ul>
       </div>
-      <div className="flex flex-row gap-2 md:gap-10 ml-auto justify-center sm:justify-normal  md:mr-2 h-auto">
+      <div className="flex flex-row gap-2 md:gap-10 sm:ml-auto ml-4 justify-center sm:justify-normal mr-4  md:mr-8 h-auto">
         <div
-          className="font-sans font-normal bg-white border-black border rounded text-black text-center leading-tight justify-center sm:px-3 py-1 sm:py-1.5 hover:text-white hover:bg-black transition-all duration-300 ease-in-out hover:cursor-pointer w-[60px] sm:min-w-[120px] text-xs sm:text-base"
-          onClick={scrollToTop}
-        >
-          Watch demo
-        </div>
-        <div
-          onClick={() =>
-            (window.location.href = "Pravi-deck-Canopy-community.pdf")
-          }
+          onClick={() => (window.location.href = "Pravi Pitch Deck.pdf")}
           className="font-sans font-normal bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight sm:px-3 py-1 sm:py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer w-[70px] sm:min-w-[180px] text-xs sm:text-base"
         >
           Download pitch deck

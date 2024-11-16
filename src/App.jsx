@@ -27,9 +27,7 @@ function App({ scrollToTop }) {
             </p>
             <div className="flex flex-row sm: gap-10 p-8 sm:justify-start px-0 pb-14 justify-center">
               <button
-                onClick={() =>
-                  (window.location.href = "Pravi-deck-Canopy-community.pdf")
-                }
+                onClick={() => (window.location.href = "Pravi Pitch Deck.pdf")}
                 className="font-sans bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight px-3 py-2.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer"
               >
                 Download pitch deck
@@ -45,7 +43,7 @@ function App({ scrollToTop }) {
         id="problem"
         className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16"
       >
-        <div className="flex flex-row md:w-[80%] sm:w-[80%] w-[100%] max-w-[650px] bg-gray-100 rounded-xl pb-4">
+        <div className="flex flex-row md:w-[80%] sm:w-[80%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8">
           <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
             <div className="absolute z-[20]">
               <img
@@ -54,15 +52,8 @@ function App({ scrollToTop }) {
                 className="sm:h-[270px] h-[180px] min-w-max"
               />
             </div>
-            <div className="absolute -mr-40 -mt-14 z-[10] hidden sm:block">
-              <img
-                alt="abstract circle image for page decoration"
-                src="pinkcirc.svg"
-                className="min-h-[200px] min-w-[150px] mt-16 self-end place-self-end justify-self-end"
-              />
-            </div>
           </div>
-          <div className="sm:p-4 flex flex-col gap-4 sm:ml-40 ml-8 pt-4">
+          <div className="sm:p-4 flex flex-col gap-4 sm:ml-48 ml-8 pt-4">
             <div className="flex flex-row">
               <img
                 alt="problem number one bullet point"
@@ -74,9 +65,9 @@ function App({ scrollToTop }) {
                 className="sm:hidden block h-auto w-auto max-h-[180px] ml-auto mr-2 -mt-20"
               />
             </div>
-            <div className="-mt-6">
+            <div className="-mt-10 sm:-mt-0">
               <h2 className="font-bold font-sans text-lg">Problem</h2>
-              <p className="pr-4 font-sans">
+              <p className="pr-4 font-sans sm:mt-4 mt-2">
                 In the UK, 168,000 nonprofits are struggling to find donors to
                 give to their cause. <br />
                 They lack the resources, data, and expertise to fix this problem
@@ -97,7 +88,7 @@ function App({ scrollToTop }) {
 
           <div
             id="solution"
-            className="flex flex-row-reverse h-auto md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-20"
+            className="flex flex-row-reverse h-auto md:w-[60%] sm:w-[80%] w-[100%] bg-gray-100 rounded-xl pb-4 sm:mr-40"
           >
             <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
               <div className="absolute z-[20]">
@@ -107,16 +98,9 @@ function App({ scrollToTop }) {
                   className="sm:h-[270px] h-[180px] min-w-max mt-4 sm:flex hidden"
                 />
               </div>
-              <div className="absolute -mr-40 -mt-14 z-[10] hidden sm:block">
-                <img
-                  alt="abstract pink circle for page design"
-                  src="pinkcirc.svg"
-                  className="min-h-[200px] min-w-[150px] mt-20 self-end place-self-end justify-self-end"
-                />
-              </div>
             </div>
-            <div className="p-4 flex flex-col gap-4 sm:mr-8 mr-0">
-              <div className="flex flex-row">
+            <div className="p-4 flex flex-col gap-4 sm:mr-12 mr-0">
+              <div className="flex flex-row w-full">
                 <img
                   src="rubiks.png"
                   className="sm:hidden block max-h-[180px] mr-auto -mt-16"
@@ -124,14 +108,14 @@ function App({ scrollToTop }) {
                 <img
                   alt="problem number one bullet point"
                   src="probcirc2.svg"
-                  className="self-start mt-auto mb-8"
+                  className="self-start mt-auto mb-8 place-self-end justify-end justify-self-end ml-auto"
                 />
               </div>
               <div className="-mt-6">
                 <h2 className="font-bold font-sans text-lg text-right">
                   Solution
                 </h2>
-                <p className="text-right sm:pl-4 font-sans">
+                <p className="text-right sm:pl-4 font-sans sm:mt-6 mt-2">
                   Pravi creates precise donor personas, builds conversion
                   funnels, and optimises fundraising campaigns.
                   <br />
@@ -154,7 +138,10 @@ function App({ scrollToTop }) {
           className="sm:w-[85px] sm:h-[85px] w-[42px] h-[42px] absolute top-0 right-0 mt-16 mr-8"
         />
       </div>
-      <div className="sm:px-20 sm:py-16 py-4 sm:pt-0 px-2 flex flex-row w-full justify-evenly flex-wrap">
+      <p className="place-self-center text-xl font-sans pb-8 sm:pb-12 sm:pt-2 text-center mx-4">
+        Hundreds of nonprofits on our waitlist, achieved with £0 marketing spend
+      </p>
+      {/* <div className="sm:px-20 sm:py-16 py-4 sm:pt-0 px-2 flex flex-row w-full justify-evenly flex-wrap">
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img
             alt="group of people icon"
@@ -223,7 +210,7 @@ function App({ scrollToTop }) {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="market" className="flex flex-col justify-center mb-4">
         <h2 className="text-3xl text-center font-sans font-extrabold mt-4 mb-6">
           Market and Projections
@@ -234,7 +221,7 @@ function App({ scrollToTop }) {
             src="shape2.svg"
             className="self-end -mr-14 -mb-8 z-[50] md:block hidden"
           />
-          <div className="flex-1 max-w-[70%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:mr-4">
+          <div className="flex-1 max-w-[70%] below-1200:max-w-[50%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:mr-4">
             <img alt="globe icon" className="" src="/globe-icon.svg" />
             <p className="p-4 sm:text-lg text-center font-sans text-sm">
               <span className="font-bold">TAM:</span> 4.5m nonprofits across the
@@ -244,7 +231,7 @@ function App({ scrollToTop }) {
               revenues between £100k-£3.5m
             </p>
           </div>
-          <div className="flex-1 max-w-[70%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:ml-4">
+          {/* <div className="flex-1 max-w-[70%] min-w-[300px] flex flex-col items-center justify-start bg-[#fff2f9] p-8 rounded-xl md:ml-4">
             <img alt="line graph icon" className="" src="/graph-icon.svg" />
             <p className="p-4 sm:text-lg text-center text-sm font-sans">
               <span className="font-bold">12-Month Revenue Forecast:</span> £7.2
@@ -256,13 +243,11 @@ function App({ scrollToTop }) {
               <span className="font-bold">Revenue Growth:</span> £78.9 million
               by Year 5, with over 100,000 customers
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col justify-center items-center my-4">
           <button
-            onClick={() =>
-              (window.location.href = "Pravi-deck-Canopy-community.pdf")
-            }
+            onClick={() => (window.location.href = "Pravi Pitch Deck.pdf")}
             className="inline-block font-sans bg-custom-pink border-custom-pink-border border rounded text-white text-center leading-tight px-3 py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer"
           >
             Download pitch deck
@@ -271,25 +256,24 @@ function App({ scrollToTop }) {
       </div>
       <div
         id="business"
-        className="sm:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center"
+        className="sm:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center "
       >
-        <div className="flex flex-col sm:w-[50%] w-[100%]">
-          <h2 className="text-3xl text-left font-sans font-extrabold my-0">
+        <div className="flex flex-col sm:w-[50%] w-[100%] ml-auto">
+          <h2 className="text-3xl text-center font-sans font-extrabold my-0">
             Business model
           </h2>
-          <div className="flex flex-row">
-            <div className="flex flex-col w-[60%]">
+          <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col w-[60%] items-center mb-8">
               <img
                 alt="calendar icon"
                 className="w-[75px] sm:w-[100px] py-6"
                 src="/calendar-icon.svg"
               />
-              <p className="p-4 sm:text-lg font-sans text-left pl-0">
-                Subscription-based model with tiered pricing for nonprofits and
-                nonprofit consultants.
+              <p className="p-4 pt-0 sm:text-xl text-center font-sans">
+                B2B, SaaS, Big data.
               </p>
             </div>
-            <div className="flex flex-col w-[50%]">
+            {/* <div className="flex flex-col w-[50%]">
               <img
                 alt="checklist icon"
                 className="w-[75px] sm:w-[100px] py-6"
@@ -299,9 +283,9 @@ function App({ scrollToTop }) {
                 £350,000 Innovate UK Smart Grant covers research and developmet
                 costs.
               </p>
-            </div>
+            </div> */}
           </div>
-          <div className="flex flex-row gap-10 mt-auto">
+          <div className="flex flex-row gap-10 mt-auto justify-center">
             <button
               onClick={scrollToTop}
               className="bg-white font-sans border-custom-pink-border border rounded hover:text-white text-center leading-tight px-3 py-1.5 hover:bg-black transition-all duration-300 ease-in-out hover:cursor-pointer"
@@ -309,9 +293,7 @@ function App({ scrollToTop }) {
               Watch demo
             </button>
             <button
-              onClick={() =>
-                (window.location.href = "Pravi-deck-Canopy-community.pdf")
-              }
+              onClick={() => (window.location.href = "Pravi Pitch Deck.pdf")}
               className="bg-custom-pink font-sans border-custom-pink-border border rounded text-white text-center leading-tight px-3 py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer"
             >
               Download pitch deck
@@ -331,7 +313,7 @@ function App({ scrollToTop }) {
           The Ask
         </h2>
         <div className="w-full md:px-16 px-2 justify-center items-center flex flex-row flex-wrap">
-          <div className="below-1000:w-[35%] w-[58%]">
+          {/* <div className="below-1000:w-[35%] w-[58%]">
             <img
               alt="piechart showing how the ask will be distributed"
               src="piechart.svg"
@@ -344,16 +326,16 @@ function App({ scrollToTop }) {
               src="info.svg"
               className="p-4"
             />
-          </div>
-          <div className="mb-4 flex-1 h-[100%] bg-[#fff2f9] below-1000:w-[35%] w-[80%] rounded-xl min-h-[200px] flex items-start flex-col sm:px-8 px-4 sm:py-6 py-3 gap-8 ">
+          </div> */}
+          <div className="sm:mb-4 mb-10 h-[100%] bg-[#fff2f9] below-1200:w-[40%] w-[70%] place-self-center rounded-xl min-h-[200px] flex items-start flex-col sm:px-8 px-4 sm:py-8 py-3 gap-8 ">
             <div className="flex flex-row">
               <img
                 alt="checkmark icon"
                 src="check.svg"
-                className="sm:block hidden self-center max-h-[24px] w-auto"
+                className="self-center max-h-[24px] w-auto"
               />
               <div className="flex flex-col ml-2">
-                <h3 className="text-xl font-sans font-bold">£400,000</h3>
+                <h3 className="text-xl font-sans font-bold">£500,000</h3>
                 <p className="mr-2 font-sans">
                   to scale marketing and sales operations.
                 </p>
@@ -366,10 +348,9 @@ function App({ scrollToTop }) {
                 className="self-center max-h-[24px] w-auto"
               />
               <div className="flex flex-col ml-2">
-                <h3 className="text-xl font-sans font-bold">66.8%</h3>
+                <h3 className="text-xl font-sans font-bold">SEIS / EIS</h3>
                 <p className="font-sans">
-                  of funds will be directed toward marketing, targeting a
-                  customer base of 10,000 within the first year.
+                  get in quickly to access our remaining SEIS / EIS allocation
                 </p>
               </div>
             </div>
@@ -384,7 +365,7 @@ function App({ scrollToTop }) {
                   Accelerate growth
                 </h3>
                 <p className="font-sans">
-                  launch in the USA, and generate £7.2 million ARR
+                  launch in the USA and generate £7.2 million ARR
                 </p>
               </div>
             </div>
@@ -399,19 +380,17 @@ function App({ scrollToTop }) {
             Watch demo
           </button>
           <button
-            onClick={() =>
-              (window.location.href = "Pravi-deck-Canopy-community.pdf")
-            }
+            onClick={() => (window.location.href = "Pravi Pitch Deck.pdf")}
             className="bg-custom-pink font-sans border-custom-pink-border border rounded text-white text-center leading-tight px-3 py-1.5 hover:bg-custom-pink-border transition-all duration-300 ease-in-out hover:cursor-pointer"
           >
             Download pitch deck
           </button>
         </div>
       </div>
-      <h2 className="text-3xl text-center font-sans font-extrabold sm:mt-10 mt-8 sm:mb-6 mb-4">
+      {/* <h2 className="text-3xl text-center font-sans font-extrabold sm:mt-10 mt-8 sm:mb-6 mb-4">
         In partnership with
-      </h2>
-      <div className="flex flex-wrap gap-4 justify-center mt-6 mb-4">
+      </h2> */}
+      {/* <div className="flex flex-wrap gap-4 justify-center mt-6 mb-4">
         <div className="max-w-[450px] w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
           <img
             alt="Orbital Global company logo"
@@ -440,6 +419,19 @@ function App({ scrollToTop }) {
             className="w-full"
           />
         </div>
+      </div> */}
+      <div className="flex flex-col items-center">
+        <div className="max-w-[450px] w-[70%] mx-12 my-10 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md place-self-center">
+          <img
+            alt="innovate UK company logo"
+            src="/innovateuk-logo.png"
+            className="w-full"
+          />
+        </div>
+        <p className="font-sans text-xl mb-8 text-center">
+          £350,000 Innovate UK Smart Grant covers research and development
+          costs.
+        </p>
       </div>
       <div className="relative mt-6">
         <div className="absolute inset-0  below-1000:w-[60%] w-[80%] below-1000:h-[110%] sm:h-[80%] h-[90%]  bg-[#fff2f9] -z-10 left-1/2 transform -translate-x-1/2 rounded-xl"></div>
@@ -453,7 +445,7 @@ function App({ scrollToTop }) {
             Meet the team
           </h2>
           <div className="flex flex-wrap md:gap-8 gap-4 justify-center mt-10">
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 justify-items-center flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 alt="Jeremy Healsmith profile picture"
                 src="/jeremy-profile.jpg"
@@ -466,8 +458,18 @@ function App({ scrollToTop }) {
               <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Co-Founder
               </h4>
+              <a
+                href="https://www.linkedin.com/in/jeremy-healsmith/"
+                target="_blank"
+              >
+                <img
+                  alt="linkedin logo"
+                  src="linkedin.svg"
+                  className="max-w-[25px]"
+                />
+              </a>
             </div>
-            <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
+            <div className="flex-grow-0 justify-items-center flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
                 src="/robyn-profile.jpg"
                 alt="Robyn Greaves profile picture"
@@ -480,6 +482,16 @@ function App({ scrollToTop }) {
               <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Co-Founder
               </h4>
+              <a
+                href="https://www.linkedin.com/in/robyn-greaves/"
+                target="_blank"
+              >
+                <img
+                  alt="linkedin logo"
+                  src="linkedin.svg"
+                  className="max-w-[25px]"
+                />
+              </a>
             </div>
             <div className="flex-grow-0 flex-shrink-0 bg-white w-[120px] sm:w-[250px] md:w-[250px] p-4 rounded-[25px] border-2 shadow-md">
               <img
@@ -503,7 +515,7 @@ function App({ scrollToTop }) {
               />
               <h3 className="font-sans mb-2 font-bold text-[12px] mt-4 sm:text-lg text-center">
                 Sathish
-                <br /> Sankarpandi
+                <br /> Sankarpandi, Ph.D
               </h3>
               <h4 className="font-sans text-[10px] mb-2 sm:text-lg text-center">
                 Data Scientist
@@ -528,7 +540,7 @@ function App({ scrollToTop }) {
                 (window.location.href = "https://pravi.ai/privacy-policy")
               }
             >
-              Priavacy policy
+              Privacy policy
             </button>
             <button
               className="font-sans"
@@ -561,14 +573,14 @@ function App({ scrollToTop }) {
                 className="max-w-[25px]"
               />
             </a>
-            <a href="https://uk.linkedin.com/company/pravi-ai">
+            <a href="https://uk.linkedin.com/company/pravi-ai" target="_blank">
               <img
                 alt="linkedin logo"
                 src="linkedin.svg"
                 className="max-w-[25px]"
               />
             </a>
-            <a href="https://www.instagram.com/pravi.ai/">
+            <a href="https://www.instagram.com/pravi.ai/" target="_blank">
               <img
                 alt="instagram logo"
                 src="instagram.svg"
