@@ -44,29 +44,29 @@ function App({ scrollToTop }) {
           id="problem"
           className="flex flex-col w-full sm:px-8 px-6 md:px-20 md:pt-16 pt-8 gap-16 "
         >
-          <div className="flex flex-row below-1200:w-[60%] sm:w-[90%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8 ">
-            <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block ">
+          <div className="flex flex-row below-1200:w-[60%] sm:w-[80%] w-[100%] max-w-[800px] bg-gray-100 rounded-xl sm:pb-0 pb-8 ">
+            <div className="relative flex-row h-full sm:-mt-8 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden below-1200:block">
               <div className="absolute z-[20]">
                 <img
                   alt="abstract art in the shape of a question mark"
                   src="QMark.png"
-                  className="sm:h-[270px] h-[180px] min-w-max"
+                  className="sm:h-[270px] h-[180px] min-w-max below-1200:block hidden"
                 />
               </div>
             </div>
-            <div className="sm:p-4 flex flex-col sm:ml-48 ml-8 pt-4">
+            <div className="sm:p-4 flex flex-col below-1200:ml-48 sm:ml-4 ml-8 pt-4">
               <div className="flex flex-row">
                 <img
                   alt="problem number one bullet point"
                   src="probcirc.svg"
-                  className="self-start mt-auto mb-8 place-self-end justify-start justify-self-start mr-auto"
+                  className="self-start mt-auto mb-6 place-self-end justify-start justify-self-start mr-auto"
                 />
                 <img
                   src="QMark.png"
-                  className="sm:hidden block max-w-[45vw] sm:max-h-[180px] ml-auto mr-2 -mt-20"
+                  className="below-1200:hidden block max-w-[45vw] sm:max-h-[180px] ml-auto mr-2 -mt-20"
                 />
               </div>
-              <div className="-mt-2 sm:-mt-0">
+              <div className="-mt-2 sm:-mt-0 mb-2">
                 <h2 className="font-bold font-sans text-lg">Problem</h2>
                 <p className="pr-4 font-sans sm:mt-4 mt-2">
                   In the UK, 168,000 nonprofits are struggling to find donors to
@@ -89,22 +89,22 @@ function App({ scrollToTop }) {
 
             <div
               id="solution"
-              className="flex flex-row-reverse h-auto below-1200:w-[50%] min-h-[250px] sm:w-[80%] w-[100%] max-w-[635px] bg-gray-100 rounded-xl pb-4 sm:mr-40"
+              className="flex flex-row-reverse h-auto below-1200:w-[50%] min-h-[250px] sm:w-[80%] w-[100%] max-w-[635px] bg-gray-100 rounded-xl pb-4 below-1200:mr-40"
             >
-              <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden sm:block">
+              <div className="relative flex-row sm:-mt-8 -mt-4 sm:-ml-8 -ml-4 min-h-[150px] min-w-[100px] hidden below-1200:block">
                 <div className="absolute z-[20]">
                   <img
                     alt="rubiks cube to represent problem solving"
                     src="rubiks.png"
-                    className="sm:h-[270px] h-[180px] min-w-max mt-4 sm:flex hidden"
+                    className="sm:h-[270px] h-[180px] min-w-max below-1200:block hidden"
                   />
                 </div>
               </div>
-              <div className="p-4 flex flex-col gap-4 sm:mr-12 mr-0">
+              <div className="p-4 flex flex-col gap-4 below-1200:mr-12 mr-4">
                 <div className="flex flex-row w-full">
                   <img
                     src="rubiks.png"
-                    className="sm:hidden block max-w-[45vw] sm:max-h-[180px] mr-auto -mt-16"
+                    className="below-1200:hidden block max-w-[45vw] sm:max-h-[180px] mr-auto -mt-16"
                   />
                   <img
                     alt="problem number one bullet point"
@@ -430,7 +430,7 @@ function App({ scrollToTop }) {
             className="w-full"
           />
         </div>
-        <p className="font-sans text-xl mb-8 text-center">
+        <p className="font-sans text-xl mb-8 text-center mx-5">
           £350,000 Innovate UK Smart Grant covers research and development
           costs.
         </p>
