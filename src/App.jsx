@@ -140,9 +140,46 @@ function App({ scrollToTop }) {
           className="sm:w-[85px] sm:h-[85px] w-[42px] h-[42px] absolute top-0 right-0 mt-16 mr-8"
         />
       </div>
-      <p className="place-self-center text-xl font-sans pb-8 sm:pb-12 sm:pt-2 text-center mx-4">
+      <p className="place-self-center text-xl font-sans pb-4 sm:pb-12 sm:pt-2 text-center mx-4">
         Hundreds of nonprofits on our waitlist, achieved with £0 marketing spend
       </p>
+      <div className="flex flex-wrap gap-4 justify-center mt-4 mb-10">
+        <div className="max-w-[450px] max-h-[120px] flex items-center justify-center w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+          <img
+            alt="SANDS company logo"
+            src="/logo1-SANDS.png"
+            className="w-full"
+          />
+        </div>
+        <div className="max-w-[450px] max-h-[120px] flex items-center justify-center w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+          <img
+            alt="R D H C company logo"
+            src="/logo-3RDHC.webp"
+            className="w-full"
+          />
+        </div>
+        <div className="max-w-[450px] max-h-[120px] flex items-center justify-center w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+          <img
+            alt="rainforest foundation uk company logo"
+            src="/logo2-Rainforest.png"
+            className="w-full"
+          />
+        </div>
+        <div className="max-w-[450px] max-h-[120px] flex items-center justify-center w-[70%] mx-12 sm:m-0 sm:w-1/3 md:w-1/4 p-4 rounded-[35px] border-2 shadow-md">
+          <img
+            alt="one25 company logo"
+            src="/logo-4one25.png"
+            className="w-full"
+          />
+        </div>
+        <div className="max-w-[450px] max-h-[120px] flex items-center justify-center w-[70%] mx-12 overflow-hidden sm:m-0 sm:w-1/3 md:w-1/4 rounded-[35px] border-2 shadow-md">
+          <img
+            alt="infocus company logo"
+            src="/logo-5infocus.jpg"
+            className="w-full object-cover overflow-hidden"
+          />
+        </div>
+      </div>
       {/* <div className="sm:px-20 sm:py-16 py-4 sm:pt-0 px-2 flex flex-row w-full justify-evenly flex-wrap">
         <div className="flex-1 min-w-[75px] flex flex-col items-center justify-start m-4 ml-0">
           <img
@@ -258,7 +295,7 @@ function App({ scrollToTop }) {
       </div>
       <div
         id="business"
-        className="below-1200:px-16 px-8 sm:py-4 py-4 flex flex-row justify-center sm:mx-4 below-1200:mx-16 gap-10"
+        className="below-1200:px-16 px-8 sm:py-4 py-4 flex sm:flex-row flex-col justify-center sm:mx-4 below-1200:mx-16 gap-10"
       >
         <div className="flex flex-col sm:w-[50%] w-[100%] ml-auto">
           <h2 className="text-3xl text-center font-sans font-extrabold my-0">
@@ -302,11 +339,11 @@ function App({ scrollToTop }) {
             </button>
           </div>
         </div>
-        <div className="flex-col sm:w-[50%] hidden sm:flex items-center justify-center">
+        <div className="flex-col sm:w-[50%] w-[100%] items-center justify-center mr-4">
           <img
             alt="graphic of a notice board in an office covered in notes"
-            className="w-[35vw] max-w-[400px] justify-center align-middle"
-            src="notice.png"
+            className="sm:w-[50vw] w-full max-w-[600px] justify-center align-middle"
+            src="bmimg.png"
           />
         </div>
       </div>
@@ -367,7 +404,7 @@ function App({ scrollToTop }) {
                   Accelerate growth
                 </h3>
                 <p className="font-sans">
-                  launch in the USA and generate £7.2 million ARR
+                  launch in the USA. Targeting £80 million ARR by year
                 </p>
               </div>
             </div>
