@@ -339,10 +339,10 @@ function App({ scrollToTop }) {
             </button>
           </div>
         </div>
-        <div className="flex-col sm:w-[50%] w-[100%] items-center justify-center mr-4">
+        <div className="flex-col flex sm:w-[50%] w-[100%] items-center justify-center mr-4">
           <img
-            alt="graphic of a notice board in an office covered in notes"
-            className="sm:w-[50vw] w-full max-w-[600px] justify-center align-middle"
+            alt="business cycle image"
+            className="sm:w-[50vw] w-full max-w-[600px]"
             src="bmimg.png"
           />
         </div>
